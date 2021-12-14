@@ -23,13 +23,13 @@ app.use(cors());
 
 // app.use("/", indexRouter);
 
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static("../react-client/build"))
+// if (process.env.NODE_ENV === "production") {
+  app.use(express.static("react-client/build"))
 
   app.get("*", (req, res) => {
-      res.sendFile(path.join(__dirname, '../react-client/build/index.html')) // important for 404!!!
+      res.sendFile(path.join(__dirname, 'react-client/build/index.html')) // important for 404!!!
   })
-}
+// }
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
