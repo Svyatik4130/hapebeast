@@ -34,10 +34,14 @@ const Cell = styled.div<ICellProps>`
   justify-content: center;
   border-radius: 20px;
   cursor: pointer;
+// @ts-ignore
   border-top: ${({ borderTop }) => borderTop && "3px solid#fff"};
-  border-left: ${({ borderLeft }) => borderLeft && "3px solid#fff"};
-  border-bottom: ${({ borderBottom }) => borderBottom && "3px solid#fff"};
-  border-right: ${({ borderRight }) => borderRight && "3px solid#fff"};
+// @ts-ignore
+border-left: ${({ borderLeft }) => borderLeft && "3px solid#fff"};
+// @ts-ignore
+border-bottom: ${({ borderBottom }) => borderBottom && "3px solid#fff"};
+// @ts-ignore
+border-right: ${({ borderRight }) => borderRight && "3px solid#fff"};
   transition: all 270ms ease-in-out;
 
   &:hover {
