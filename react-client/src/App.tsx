@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import styled from "styled-components";
+const styled  = require("styled-components");
 import "./App.css";
 import { io } from "socket.io-client";
 import socketService from "./services/socketService";
