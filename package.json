@@ -5,9 +5,9 @@
   "license": "MIT",
   "scripts": {
     "start": "nodemon",
-    "build": "cd ../react-client && npm run build",
-    "heroku-postbuild": "cd ../react-client && npm install && npm run build",
-    "install": "cd ../react-client && npm install"
+    "build": "cd react-client && npm run build",
+    "heroku-postbuild": "cd react-client && npm install && npm run build",
+    "install": "cd react-client && npm install"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
