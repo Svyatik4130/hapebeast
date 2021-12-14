@@ -35,13 +35,13 @@ const Cell = styled.div<ICellProps>`
   border-radius: 20px;
   cursor: pointer;
 // @ts-ignore
-  border-top: ${({ borderTop }) => borderTop && "3px solid#fff"};
+  border-top: ${({ borderTop }:any) => borderTop && "3px solid#fff"};
 // @ts-ignore
-border-left: ${({ borderLeft }) => borderLeft && "3px solid#fff"};
+border-left: ${({ borderLeft }:any) => borderLeft && "3px solid#fff"};
 // @ts-ignore
-border-bottom: ${({ borderBottom }) => borderBottom && "3px solid#fff"};
+border-bottom: ${({ borderBottom }:any) => borderBottom && "3px solid#fff"};
 // @ts-ignore
-border-right: ${({ borderRight }) => borderRight && "3px solid#fff"};
+border-right: ${({ borderRight }:any) => borderRight && "3px solid#fff"};
   transition: all 270ms ease-in-out;
 
   &:hover {
