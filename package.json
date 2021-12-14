@@ -4,7 +4,7 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "start": "nodemon",
+    "start": "ts-node ./src/server",
     "build": "cd react-client && npm install && npm run build",
     "heroku-postbuild": "cd react-client && npm install && npm run build",
     "install": "cd react-client && npm install"
