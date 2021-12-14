@@ -1,5 +1,6 @@
 import React, { useContext, useState } from "react";
-const styled  = require("styled-components");
+// @ts-ignore
+import styled from "styled-components";
 import gameContext from "../../gameContext";
 import gameService from "../../services/gameService";
 import socketService from "../../services/socketService";
