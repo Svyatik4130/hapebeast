@@ -40,7 +40,7 @@ function App() {
     const socket = await socketService
       .connect("/")
       .catch((err) => {
-        console.log(err);
+        console.log("error", err);
       });
   };
 
@@ -62,7 +62,7 @@ function App() {
   return (
     <GameContext.Provider value={gameContextValue}>
       <AppContainer>
-        <WelcomeText>Welcome to HAPEBEAST-TOE</WelcomeText>
+        <WelcomeText>Welcome to H∀PEBEAST-TOE</WelcomeText>
         <MainContainer>
           {!isInRoom && <JoinRoom />}
           {isInRoom && <Game />}
