@@ -9,11 +9,10 @@ body,
 #root {
   width: 100%;
   height: 100%;
-  background-image: url("https://static.wixstatic.com/media/7aa6cb_cd2a799f9d234b168ad2ac03cdb9da97~mv2.png/v1/fill/w_2400,h_1016,al_c/7aa6cb_cd2a799f9d234b168ad2ac03cdb9da97~mv2.png");
+  background-image: linear-gradient( rgba(63, 63, 63, 0.5), rgba(63, 63, 63, 0.5) ), url("https://dvizhok-hosted-content.s3.us-east-2.amazonaws.com/images/landing/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: rgb(221, 221, 221);
 }
 
 /* #8e44ad */

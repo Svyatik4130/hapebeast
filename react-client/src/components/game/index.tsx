@@ -60,10 +60,17 @@ const PlayStopper = styled.div`
 `;
 
 const X = styled.span`
-  font-size: 100px;
+  font-size: 10px;
   color:#fff;
   &::after {
-    content: "H";
+    background-image: url('https://dvizhok-hosted-content.s3.us-east-2.amazonaws.com/images/landing/circle.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    width: 130px; 
+    height: 130px;
+    content:"";
   }
 `;
 
@@ -71,7 +78,14 @@ const O = styled.span`
   font-size: 100px;
   color:#fff;
   &::after {
-    content: "F";
+    background-image: url('https://dvizhok-hosted-content.s3.us-east-2.amazonaws.com/images/landing/cross.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    width: 130px; 
+    height: 130px;
+    content:"";
   }
 `;
 
