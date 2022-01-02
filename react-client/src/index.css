@@ -9,7 +9,15 @@ body,
 #root {
   width: 100%;
   height: 100%;
-  background-image: linear-gradient( rgba(63, 63, 63, 0.5), rgba(63, 63, 63, 0.5) ), url("https://dvizhok-hosted-content.s3.us-east-2.amazonaws.com/images/landing/background.png");
+}
+.sc-pNWdM {
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+      rgba(63, 63, 63, 0.5),
+      rgba(63, 63, 63, 0.5)
+    ),
+    url("https://dvizhok-hosted-content.s3.us-east-2.amazonaws.com/images/landing/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

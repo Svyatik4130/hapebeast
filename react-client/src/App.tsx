@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 // @ts-ignore
 import styled from "styled-components";
-import "./App.css";
 import { io } from "socket.io-client";
 import socketService from "./services/socketService";
 import { JoinRoom } from "./components/joinRoom";
@@ -60,6 +59,7 @@ function App() {
   };
 
   return (
+    
     <GameContext.Provider value={gameContextValue}>
       <AppContainer>
         <WelcomeText>Welcome to H∀PEBEAST-TOE</WelcomeText>

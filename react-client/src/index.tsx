@@ -2,12 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Flappy from './Flappy';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Router>
+    <React.StrictMode>
+    <Routes>
+      <Route path="/" element={<App />}/>
+      <Route path="/flappy-hape" element={<Flappy />}/>
+    </Routes>
+    </React.StrictMode>
+  </Router>,
   document.getElementById('root')
 );
 
