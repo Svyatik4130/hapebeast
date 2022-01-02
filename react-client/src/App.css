@@ -69,7 +69,7 @@ html {
   width: 50px;
   background-color: #25796E	;
   background-image: url("https://dvizhok-hosted-content.s3.us-east-2.amazonaws.com/images/landing/hape_bg_white_pipe.png");
-  /* box-shadow: inset 0px 0px 4px 0px rgb(255, 0, 0); */
+  box-shadow: inset 0px 0px 4px 0px #15d1b8;
 }
 .bottom {
   border-top-left-radius: 9999px;

@@ -27,7 +27,7 @@ app.use(cors());
   app.use(express.static("react-client/build"))
 
   app.get("*", (req, res) => {
-      res.sendFile(path.join(__dirname, 'react-client/build/index.html')) // important for 404!!!
+      res.sendFile(path.join(__dirname, '../react-client/build/index.html')) // important for 404!!!
   })
 // }
 
