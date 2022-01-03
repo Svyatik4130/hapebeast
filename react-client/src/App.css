@@ -67,7 +67,7 @@ html {
 .Pipe {
   position: absolute;
   width: 50px;
-  background-color: #25796E	;
+  background-color: rgba(37, 121, 110, 0.64);
   background-image: url("https://dvizhok-hosted-content.s3.us-east-2.amazonaws.com/images/landing/hape_bg_white_pipe.png");
   box-shadow: inset 0px 0px 4px 0px #15d1b8;
 }
