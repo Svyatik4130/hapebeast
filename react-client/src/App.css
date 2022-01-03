@@ -67,9 +67,9 @@ html {
 .Pipe {
   position: absolute;
   width: 50px;
-  background-color: rgba(37, 121, 110, 0.64);
+  background-color: #c1ad3aa2;
   background-image: url("https://dvizhok-hosted-content.s3.us-east-2.amazonaws.com/images/landing/hape_bg_white_pipe.png");
-  box-shadow: inset 0px 0px 4px 0px #15d1b8;
+  box-shadow: inset 0px 0px 4px 0px #ffdb11;
 }
 .bottom {
   border-top-left-radius: 20px;
@@ -78,6 +78,37 @@ html {
 .top {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+}
+
+.exp-btn {
+  position: absolute;
+  z-index: 50;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 28px;
+  white-space: nowrap;
+  border-radius: 0.75rem;
+  background-color: #1eac11;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  padding: 8px;
+}
+.exp-btn:hover {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  animation: none;
+  background-color: #27df16;
+  cursor: pointer;
+}
+@keyframes pulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
 }
 
 .Score {

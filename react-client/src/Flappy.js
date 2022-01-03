@@ -5,6 +5,7 @@ import Pipe from "./components/Pipe";
 import Controls from "./components/Controls";
 import Score from "./components/Score";
 import { generatePipePairs, initialState } from "./helpers";
+import ExportScore from './components/ExportScore';
 
 class App extends Component {
   state = {
@@ -151,11 +152,10 @@ class App extends Component {
   }
 
   resetGame = () => {
-    const { gameState } = this.state;
+    const { gameState, score } = this.state;
     if (gameState === 'pause') {
       return this.startGame();
     }
-
     // clear timeouts
     function clearAll(windowObject) {
       var id = Math.max(
@@ -172,7 +172,6 @@ class App extends Component {
     this.setState({
       speedTime: 8.66
     })
-
     this.setState(initialState);
   }
 
@@ -219,6 +218,7 @@ class App extends Component {
     return (
       <div className="App">
         <Score score={score} />
+        <ExportScore score={score} gameRunning={gameRunning} />
         <Controls />
         <Bird top={top} gameRunning={gameRunning} />
         {
