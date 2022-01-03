@@ -72,12 +72,12 @@ html {
   box-shadow: inset 0px 0px 4px 0px #15d1b8;
 }
 .bottom {
-  border-top-left-radius: 9999px;
-  border-top-right-radius: 9999px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 .top {
-  border-bottom-left-radius: 9999px;
-  border-bottom-right-radius: 9999px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .Score {
