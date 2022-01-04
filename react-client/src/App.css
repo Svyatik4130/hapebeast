@@ -72,12 +72,12 @@ html {
   box-shadow: inset 0px 0px 4px 0px #ffdb11;
 }
 .bottom {
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 .top {
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 .exp-btn {

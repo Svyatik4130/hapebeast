@@ -4,7 +4,7 @@ import jwt from 'jsonwebtoken'
 export default function ExportScore({ score, gameRunning }) {
     var token = jwt.sign({ score }, 'vlad')
     const [btnText, setbtnText] = useState("Copy my score to clipboard")
-    const text = `:fire: Hey, i've just scored '${score}' :fire: \n Who can beat me :smirk: ?? \n \n @Un_Like#6483 @SirVaalok | HVPE#9067 \n my security token: ${token}`
+    const text = `:fire: Hey, I just scored '${score}' :fire: \n Who can beat me :smirk: ?? \n \n @Un_Like#6483 @SirVaalok | HVPE#9067 \n my security token: ${token}`
 
     if (!gameRunning && score > 0) {
         return (
