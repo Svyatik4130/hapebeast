@@ -183,12 +183,7 @@ class App extends Component {
     if (kc === 32) {
       if (gameRunning) {
         this.jump();
-      }
-    }
-
-    // S -> Start
-    if (kc === 83) {
-      if (!gameRunning) {
+      } else {
         this.startGame();
       }
     }
@@ -204,12 +199,11 @@ class App extends Component {
     }
 
     // R -> Reset
-    if (kc === 32) {
+    if (kc === 82) {
       if (!gameRunning) {
         this.resetGame();
         this.startGame();
       }
-      
     }
   }
 
