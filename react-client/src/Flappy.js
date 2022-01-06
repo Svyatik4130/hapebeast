@@ -204,10 +204,12 @@ class App extends Component {
     }
 
     // R -> Reset
-    if (kc === 82) {
+    if (kc === 32) {
       if (!gameRunning) {
         this.resetGame();
+        this.startGame();
       }
+      
     }
   }
 
